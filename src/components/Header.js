@@ -1,9 +1,12 @@
+import {Link} from "react-router-dom"
+
 const Header = () => {
   return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <a style={{fontFamily: 'magic', fontSize: '40px'}} className="navbar-brand" href="/">Harry Potter <img
-              className="blason" src="images/vivedor.png" alt="blason"/></a>
+        <div className="container-fluid" >
+          <Link to="/" style={{fontFamily: 'magic', fontSize: '40px'}} className="navbar-brand">Harry Potter <img
+              className="blason"  src="images/vivedor.png" alt="blason"/></Link>
+
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
@@ -12,18 +15,18 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                <Link to="/" className="nav-link active" aria-current="page">Home</Link>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                   data-bs-toggle="dropdown" aria-expanded="false">
+                <Link to="#" className="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                   Ecoles
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="/serpentard">Serpentard</a></li>
-                  <li><a className="dropdown-item" href="/gryffondor">Gryffondor</a></li>
-                  <li><a className="dropdown-item" href="/poufsouffle">Poufsouffle</a></li>
-                  <li><a className="dropdown-item" href="/serdaigle">Serdaigle</a></li>
+                  <li><Link to="/serpentard" className="dropdown-item">Serpentard</Link></li>
+                  <li><Link to="/gryffondor" className="dropdown-item">Gryffondor</Link></li>
+                  <li><Link to="poufsouffle" className="dropdown-item">Poufsouffle</Link></li>
+                  <li><Link to="serdaigle" className="dropdown-item">Serdaigle</Link></li>
                 </ul>
               </li>
             </ul>
