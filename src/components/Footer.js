@@ -4,7 +4,7 @@ const Footer = () => {
         <div className="container p-3">
           <div className="row">
             <div className="col-6">
-              <div className="text-white">Harry Potter</div>
+              <div className="text-white" style={{fontFamily: 'magic', fontSize: '40px'}}>Harry Potter</div>
             </div>
             <div className="col-6">
               <h4 className="text-warning">Liens utiles</h4>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="row">
-            <p className="text-white text-center">Made with <span className="text-danger">&hearts;</span> by <b>Wetterene Rémy</b> and <b>Biaccalli Ferdinando</b>
+            <p className="text-white text-center">Made by <b>Wetterene Rémy</b> and <b>Biaccalli Ferdinando</b>
             </p>
           </div>
         </div>
