@@ -1,32 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from "./components/Header"
+
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Rooter, Route,Routes} from 'react-router-dom';
 import Gryffondor  from "./pages/Gryffondor"
 import Serpentard from "./pages/Serpentard"
 import Poufsouffle  from "./pages/Poufsouffle"
 import Serdaigle from "./pages/Serdaigle"
+import App from './App';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-function App(){
+function Root(){
 return(
 
   <Rooter>
+    <>
+    
+
+    <Header />
+    <div className="container">
+
     <Routes>
-      <Route path={"/"} element={App} />
-      <Route path={"/serpentard"} element={Serpentard} />
-      <Route path={"/gryffondor"} element={Gryffondor} />
-      <Route path={"/poufsouffle"} element={Poufsouffle} />
-      <Route path={"/serdaigle"} element={Serdaigle} />
+      <Route path="/" element={<App />}/>
+      <Route path={"serpentard"} element={ <Serpentard />} />
+      <Route path={"/gryffondor"} element={<Gryffondor />} />
+      <Route path={"/poufsouffle"} element={<Poufsouffle />} />
+      <Route path={"/serdaigle"} element={<Serdaigle />} />
+     
     </Routes>
+    </div>
+    <Footer />
+    </>
   </Rooter>
     )
 }
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
