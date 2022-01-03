@@ -8,6 +8,7 @@ import {Gryffondor as Grif} from "./pages/Gryffondor"
 import {Serpentard as Serp} from "./pages/Serpentard"
 import {Poufsouffle as Pouf} from "./pages/Poufsouffle"
 import {Serdaigle as Serd} from "./pages/Serdaigle"
+
 function App(){
   <Rooter>
     <Routes>
