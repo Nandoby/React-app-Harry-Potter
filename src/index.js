@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from "./components/Header"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Rooter, Route,Routes} from 'react-router-dom';
 import {Gryffondor as Grif} from "./pages/Gryffondor"
@@ -23,7 +23,7 @@ function App(){
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
   </React.StrictMode>,
   document.getElementById('root')
 );
