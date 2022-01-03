@@ -18,7 +18,7 @@ return(
   <Rooter>
     <>
     <Header />
-    <div className="container">
+    <div className="container min-vh-100">
     <Routes>
       <Route path="/" element={<App />}/>
       <Route path={"/serpentard"} element={ <Serpentard />} />
