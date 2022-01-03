@@ -4,21 +4,24 @@ import './index.css';
 import Header from "./components/Header"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Rooter, Route,Routes} from 'react-router-dom';
-import {Gryffondor as Grif} from "./pages/Gryffondor"
-import {Serpentard as Serp} from "./pages/Serpentard"
-import {Poufsouffle as Pouf} from "./pages/Poufsouffle"
-import {Serdaigle as Serd} from "./pages/Serdaigle"
+import Gryffondor  from "./pages/Gryffondor"
+import Serpentard from "./pages/Serpentard"
+import Poufsouffle  from "./pages/Poufsouffle"
+import Serdaigle from "./pages/Serdaigle"
 
 function App(){
+return(
+
   <Rooter>
     <Routes>
-      <Route path={"/"} component={App} />
-      <Route path={"/serpentard"} component={Serp} />
-      <Route path={"/gryffondor"} component={Grif} />
-      <Route path={"/poufsouffle"} component={Pouf} />
-      <Route path={"/serdaigle"} component={Serd} />
+      <Route path={"/"} element={App} />
+      <Route path={"/serpentard"} element={Serpentard} />
+      <Route path={"/gryffondor"} element={Gryffondor} />
+      <Route path={"/poufsouffle"} element={Poufsouffle} />
+      <Route path={"/serdaigle"} element={Serdaigle} />
     </Routes>
   </Rooter>
+    )
 }
 
 ReactDOM.render(
