@@ -17,18 +17,14 @@ return(
 
   <Rooter>
     <>
-    
-
     <Header />
     <div className="container">
-
     <Routes>
       <Route path="/" element={<App />}/>
       <Route path={"serpentard"} element={ <Serpentard />} />
       <Route path={"/gryffondor"} element={<Gryffondor />} />
       <Route path={"/poufsouffle"} element={<Poufsouffle />} />
       <Route path={"/serdaigle"} element={<Serdaigle />} />
-     
     </Routes>
     </div>
     <Footer />
