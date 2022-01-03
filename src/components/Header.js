@@ -3,7 +3,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a style={{fontFamily: 'magic', fontSize: '40px'}} className="navbar-brand" href="/">Harry Potter <img
-              className="blason" src="/baguette.png" alt="blason"/></a>
+              className="blason" src="images/vivedor.png" alt="blason"/></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
