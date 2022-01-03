@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Rooter, Route, Router} from 'react-router-dom';
-import {Serpentard as Serp , Gryffondor as Grif,Poufsouffle as Pouf, Serdaigle as Serd} from "./pages"
+import {BrowserRouter as Rooter, Route,Routes} from 'react-router-dom';
+import {Gryffondor as Grif} from "./pages/Gryffondor"
+import {Serpentard as Serp} from "./pages/Serpentard"
+import {Poufsouffle as Pouf} from "./pages/Poufsouffle"
+import {Serdaigle as Serd} from "./pages/Serdaigle"
 function App(){
-  <Router>
+  <Rooter>
     <Routes>
       <Route path={"/"} component={App} />
-      <Route path={"/"} component={App} />
+      <Route path={"/serpentard"} component={Serp} />
+      <Route path={"/gryffondor"} component={Grif} />
+      <Route path={"/poufsouffle"} component={Pouf} />
+      <Route path={"/serdaigle"} component={Serd} />
     </Routes>
-  </Router>
+  </Rooter>
 }
 
 ReactDOM.render(
