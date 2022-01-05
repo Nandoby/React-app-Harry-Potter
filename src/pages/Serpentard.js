@@ -1,12 +1,12 @@
 import Content from "../components/Content";
-function Serpentard () {
-    return ( 
+function Serpentard ({school}) {
+    return (
         <>
         <Content 
-          colors={"#3f6754"}
           content={
             <>
-              <h1>hello</h1>
+              <img src={school.coverImg} className='img-fluid' />
+              <h1>{school.school}</h1>
             </>
 
           }
