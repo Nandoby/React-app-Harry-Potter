@@ -1,18 +1,13 @@
 import Content from "../components/Content";
 
-function Gryffondor () {
+function Gryffondor ({school}) {
   return (
       <>
         <Content 
-          colors={"#a23e38"}
           content={
             <>
-              <h1 className="text-center">hello</h1>
-              <div className="row">
-               <div className="col">
-        
-               </div>
-              </div>
+              <img src={school.coverImg} className='img-fluid' />
+              <h1>{school.school}</h1>
             </>
 
           }
