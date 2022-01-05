@@ -11,14 +11,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
   cursor: url('/public/images/cursor.png'), auto;	
 }
-
+.textMagic{
+  font-family: "magic";
+}
 .blason{
   max-width: 30px;
   max-height: 30px;
   object-fit: contain;
   cursor:crosshair;
 }
+.imageNone{
+  background-color: transparent;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*btn*/
+.btn-gryffondor{
+  background: #570406; 
+}
+.btn-serpentard{
+  background: #3b5300; 
+}
+.btn-serdaigle{
+  background: #035b76; 
+}
+
+.btn-poufsouffle{
+  background: #d09a00; 
+}
+
+
+
+
