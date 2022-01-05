@@ -9,11 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('/public/images/cursor.png'), auto;	
 }
+
 .blason{
   max-width: 30px;
   max-height: 30px;
   object-fit: contain;
+  cursor:crosshair;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

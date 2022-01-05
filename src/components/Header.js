@@ -4,7 +4,7 @@ const Header = () => {
   return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid" >
-          <Link to="/" style={{fontFamily: 'magic', fontSize: '40px'}} className="navbar-brand">Harry Potter <img
+          <Link to="/" style={{fontFamily: 'magic', fontSize: '40px'}} className="navbar-brand text-warning">Harry Potter <img
               className="blason"  src="images/vivedor.png" alt="blason"/></Link>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

@@ -1,8 +1,18 @@
+import Content from "../components/Content";
 function Serpentard () {
     return ( 
         <>
-        <h1>test</h1>
-        </>
+        <Content 
+          colors={"#3f6754"}
+          content={
+            <>
+              <h1>hello</h1>
+            </>
+
+          }
+        
+        />      
+      </>
      );
 }
 

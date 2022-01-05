@@ -1,8 +1,19 @@
+import Content from "../components/Content";
+
 function Serdaigle () {
     return ( 
         <>
-        <h1>test</h1>
-        </>
+        <Content 
+          colors={"#2b3656"}
+          content={
+            <>
+              <h1>hello</h1>
+            </>
+
+          }
+        
+        />      
+      </>
      );
 }
 

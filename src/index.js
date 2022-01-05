@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Rooter, Route,Routes} from 'react-router-dom';
+import {BrowserRouter as Rooter, Route,Routes, useHref} from 'react-router-dom';
 import Gryffondor  from "./pages/Gryffondor"
 import Serpentard from "./pages/Serpentard"
 import Poufsouffle  from "./pages/Poufsouffle"
@@ -13,11 +13,14 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function Root(){
+const school = ["gryffondor","Serpentard","Poufsouffle","Serdaigle"];
 return(
 
   <Rooter>
     <>
     <Header />
+    <div className="container-fluid"  style={{backgroundColor:"black"}}>
+
     <div className="container min-vh-100">
     <Routes>
       <Route path="/" element={<App />}/>
@@ -26,6 +29,7 @@ return(
       <Route path={"/poufsouffle"} element={<Poufsouffle />} />
       <Route path={"/serdaigle"} element={<Serdaigle />} />
     </Routes>
+    </div>
     </div>
     <Footer />
     </>

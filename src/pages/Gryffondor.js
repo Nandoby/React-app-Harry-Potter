@@ -1,7 +1,24 @@
+import Content from "../components/Content";
 
 function Gryffondor () {
   return (
-      <h1>Hello</h1>
+      <>
+        <Content 
+          colors={"#a23e38"}
+          content={
+            <>
+              <h1 className="text-center">hello</h1>
+              <div className="row">
+               <div className="col">
+        
+               </div>
+              </div>
+            </>
+
+          }
+        
+        />      
+      </>
   )
 }
 
