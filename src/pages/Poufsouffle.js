@@ -3,6 +3,7 @@ function Poufsouffle ({school}) {
     return ( 
         <>
         <Content 
+          colors={"red"}
           content={
             <>
               <h1 className="text-white text-center py-4">{school.school}</h1>

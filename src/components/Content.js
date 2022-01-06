@@ -1,10 +1,17 @@
 import { useState } from "react";
-const Content = ({content,colors}) => {
+const Content = ({content,largeContent=null,colors}) => {
 
     return (    
-        <div className="container min-vh-100 p-1" style={{ backgroundColor:colors }} >
-            {content}
+        <>
+
+        {largeContent}
+        <div className="container-fluid m-0  pb-5" style= {colors} >
+            <div className="container">
+            {content }
+            </div>
+            
         </div>
+        </>
 
      );
 }

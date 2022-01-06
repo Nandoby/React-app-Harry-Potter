@@ -22,14 +22,14 @@ function Root() {
     return school.findIndex(value => value.school === name)
   }
 
+
   return (
 
       <Rooter>
         <>
           <Header/>
-          <div className="container-fluid" style={{backgroundColor: "black"}}>
-
-            <div className="container min-vh-100">
+          
+            
               <Routes>
                 <Route path="/" element={<App/>}/>
                 <Route path={"/serpentard"} element={<Serpentard school={school[findSchool('Serpentard')]}/>}/>
@@ -37,8 +37,6 @@ function Root() {
                 <Route path={"/poufsouffle"} element={<Poufsouffle school={school[findSchool('Poufsouffle')]}/>}/>
                 <Route path={"/serdaigle"} element={<Serdaigle school={school[findSchool('Serdaigle')]}/>}/>
               </Routes>
-            </div>
-          </div>
           <Footer/>
         </>
       </Rooter>
