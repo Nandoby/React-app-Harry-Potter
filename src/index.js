@@ -45,8 +45,6 @@ function Root() {
       <Rooter>
         <>
           <Header/>
-          
-            
               <Routes>
                 <Route path="/" element={<App/>}/>
                 <Route path={"/serpentard"} element={<Serpentard school={schools[findSchool('Serpentard')]}/>}/>
