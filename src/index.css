@@ -122,7 +122,3 @@ h1,h2{
   border:none;
   border-radius: 0;
 }
-.musicImg img{
- width: 50px;
- object-fit: contain;
-}
