@@ -113,10 +113,16 @@ h1,h2{
   position: fixed;
   bottom:0;
   z-index: 10;
+  width: 100%;
+ 
 
 }
 .music audio{
   background:black !important;
   border:none;
   border-radius: 0;
+}
+.musicImg img{
+ width: 50px;
+ object-fit: contain;
 }

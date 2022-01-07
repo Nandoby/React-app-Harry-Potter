@@ -22,7 +22,7 @@ function App() {
           title : "Serpentard",
           images : "/images/blasons/serpentard.jpg",
           alt  : "gryffondor blason",
-          describe : "Gryffondor a été fondée par Godric Gryffondor. Ses couleurs sont le rouge et l'or et son emblème est le lion. Elle valorise le courage, la hardiesse, la force, la bravoure et la détermination. ",
+          describe : "Serpentard a été fondée par Salazar Serpentard. Son emblème, le serpent, rend hommage à ses dons de Fourchelang et ses couleurs sont le vert et l'argent. Serpentard valorise la grandeur, la ruse. ",
           link    : "serpentard",
           
       },
@@ -54,7 +54,6 @@ function App() {
     largeContent={
       
       <div className="container-fluid headContent">
-         <Music />
         </div>
         }
         colors={{background:"black"}}
