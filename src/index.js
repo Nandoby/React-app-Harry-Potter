@@ -11,8 +11,7 @@ import Serdaigle from "./pages/Serdaigle"
 import App from './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
-
+import Music from './components/Music';
 function Root() {
 
   const schools = [
@@ -45,6 +44,7 @@ function Root() {
       <Rooter>
         <>
           <Header/>
+          <Music />   
               <Routes>
                 <Route path="/" element={<App/>}/>
                 <Route path={"/serpentard"} element={<Serpentard school={schools[findSchool('Serpentard')]}/>}/>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Music from "./Music";
 const Content = ({content,largeContent=null,colors}) => {
 
     return (    

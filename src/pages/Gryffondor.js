@@ -4,6 +4,7 @@ function Gryffondor ({school}) {
   return (
       <>
         <Content 
+        largeContent={null}
         colors={{background:`url('/images/fond.jpg') no-repeat`, backgroundSize:'cover'}}
           content={
             <>

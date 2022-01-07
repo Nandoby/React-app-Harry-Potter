@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Content from './components/Content';
 import Cards from './components/Cards';
 import { Fragment } from 'react';
+import Music from './components/Music';
 function App() {
   let school =
   [
@@ -53,6 +54,7 @@ function App() {
     largeContent={
       
       <div className="container-fluid headContent">
+         <Music />
         </div>
         }
         colors={{background:"black"}}
