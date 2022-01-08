@@ -5,6 +5,7 @@ import Content from './components/Content';
 import Cards from './components/Cards';
 import { Fragment } from 'react';
 import Music from './components/Music';
+import Galleries3d from './components/Galleries3d';
 function App() {
   let school =
   [
@@ -75,7 +76,17 @@ function App() {
           />
           </Fragment>
           )}
-    
+       <Galleries3d 
+       pictures={
+         <>
+         <span><img src="/images/fond.gif" alt="" /></span>
+         <span><img src="/images/fond2.jpg" alt="" /></span>
+         <span><img src="/images/fond.png" alt="" /></span>
+         <span><img src="/images/vivedor.png" alt="" /></span>
+         </>
+
+       }
+       />
          </div>
      
         </>

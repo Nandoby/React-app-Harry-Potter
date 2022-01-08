@@ -1,0 +1,58 @@
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background:transparent;
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform:perspective(4000px);
+    transition:1s ease-in-out;
+}
+
+.box span{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 60deg) translatez(400px));
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent , #0004);
+}
+.box span img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.left{
+    position: absolute;
+    left:5px;
+    color:white;
+    font-size: 48px;
+    border-radius: 50%;
+    transition:0.3s ease-in-out;
+}
+
+
+.right{
+    position: absolute;
+    right:5px;
+    color:white;
+    font-size: 48px;
+    border-radius: 50%;
+    transition:0.3s ease-in-out;
+}
+
+.right i:hover,.left i:hover{
+    color:gold !important;
+    cursor: pointer;
+}
