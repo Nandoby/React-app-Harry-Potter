@@ -1,5 +1,6 @@
 import Content from "../components/Content";
 import {useState} from "react";
+import Galleries3d from "../components/Galleries3d";
 
 function Gryffondor({school}) {
   const [ display, setDisplay ] = useState(true)
@@ -67,6 +68,16 @@ function Gryffondor({school}) {
                       </ul>
                   ) : null}
                 </div>
+                <Galleries3d>
+        <img src="/images/blasons/poufsouffle.jpg" />
+        <img src="/images/blasons/serdaigle.jpg" />
+        <img src="/images/blasons/serpentard.jpg" />
+        <img src="/images/blasons/griffondor.jpg" />
+        <img src="/images/blasons/poufsouffle.jpg" />
+        <img src="/images/blasons/serdaigle.jpg" />
+        <img src="/images/blasons/serpentard.jpg" />
+        <img src="/images/blasons/griffondor.jpg" />
+        </Galleries3d>
               </>
 
             }

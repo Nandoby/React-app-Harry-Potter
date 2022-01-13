@@ -10,7 +10,7 @@
     width: 400px;
     height: 400px;
     transform-style: preserve-3d;
-    transform:perspective(4000px);
+    transform:perspective(4000px) rotatey(0);
     transition:1s ease-in-out;
 }
 
@@ -56,3 +56,10 @@
     color:gold !important;
     cursor: pointer;
 }
+.box span.actif{
+    opacity: 1;
+  }
+  .box span.passif{
+    opacity: 0.5;
+  }
+  
