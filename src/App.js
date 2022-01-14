@@ -76,17 +76,12 @@ function App() {
           />
           </Fragment>
           )}
-       <Galleries3d 
-       pictures={
-         <>
-         <span><img src="/images/fond.gif" alt="" /></span>
-         <span><img src="/images/fond2.jpg" alt="" /></span>
-         <span><img src="/images/fond.png" alt="" /></span>
-         <span><img src="/images/vivedor.png" alt="" /></span>
-         </>
-
-       }
-       />
+       <Galleries3d>
+        <img src="/images/blasons/poufsouffle.jpg" />
+        <img src="/images/blasons/serdaigle.jpg" />
+        <img src="/images/blasons/serpentard.jpg" />
+        <img src="/images/blasons/griffondor.jpg" />
+        </Galleries3d>
          </div>
      
         </>

@@ -1,5 +1,7 @@
 import Content from "../components/Content";
+
 import { Fragment, useState } from "react";
+
 import Galleries3d from "../components/Galleries3d";
 
 function Gryffondor({ school }) {
@@ -70,17 +72,6 @@ function Gryffondor({ school }) {
               <h1 style={head} className="text-center head">
                 {school.school}
               </h1>
-
-              <h3 style={head2} onClick={() => show(display, setDisplay)}>
-                Présentation {display ? down : left}
-              </h3>
-              {display ? (
-                <div
-                  style={text}
-                  dangerouslySetInnerHTML={{ __html: school.presentation }}
-                />
-              ) : null}
-
               <h3 style={head2} onClick={() => show(avantage, setAvantage)}>
                 Avantages {avantage ? down : left}
               </h3>
@@ -112,42 +103,11 @@ function Gryffondor({ school }) {
                 </ul>
               ) : null}
             </div>
-            <Galleries3d
-              pictures={
-                <>
-                  <span>
-                    <img
-                      src="https://www.alleedescuriosites.com/wp-content/uploads/2016/08/harry-potter.jpg"
-                      alt=""
-                    />
-                  </span>
-                  <span>
-                    <img
-                      src="https://lageekosophe.com/wp-content/uploads/2017/03/Personnages-pop-culture-Hermione-Granger.jpg"
-                      alt=""
-                    />
-                  </span>
-                  <span>
-                    <img
-                      src="https://media.melty.fr/article-4329688-facebook-f12/media.jpg"
-                      alt=""
-                    />
-                  </span>
-                  <span>
-                    <img
-                      src="https://media-mcetv.ouest-france.fr/wp-content/uploads/2020/07/harry-potter-albus-dumbledore-est-mort-a-un-age-tres-avance-.jpg"
-                      alt=""
-                    />
-                  </span>
-                  <span>
-                    <img
-                      src="https://i.skyrock.net/4822/80464822/pics/3040899523_1_2_iLV7S8JI.jpg"
-                      alt=""
-                    />
-                  </span>
-                </>
-              }
-            />
+            <Galleries3d>
+              <img src="https://media.vanityfair.fr/photos/6193811a826173bb2f281886/16:9/w_2560%2Cc_limit/MCDHAPO_EC797.jpg" alt=""/>
+              <img src="https://media.warnerbros.fr/images/HermioneGranger.jpg" alt=""/>
+              <img src="https://media.melty.fr/article-4329688-facebook-f12/media.jpg" alt=""/>
+            </Galleries3d>
           </>
         }
       />

@@ -1,5 +1,6 @@
 import Content from "../components/Content";
 import {useState} from "react";
+import Galleries3d from "../components/Galleries3d";
 function Serpentard({school}) {
   const [ display, setDisplay ] = useState(true)
   const [ avantage, setAvantage ] = useState(false)
@@ -42,7 +43,6 @@ function Serpentard({school}) {
               minHeight: 'calc(100vh - 70px)',
               backgroundPosition: 'center center',
               mixBlendMode: 'darken'
-
             }}
             content={
               <>
@@ -66,6 +66,13 @@ function Serpentard({school}) {
                       </ul>
                   ) : null}
                 </div>
+
+                <Galleries3d>
+                  <img src="https://pbs.twimg.com/profile_images/1163568191983034369/xsE__Ro3_400x400.jpg" alt=""/>
+                  <img src="https://actualitte.com/uploads/images/Severus-Snape-severus-snape-9231013-1920-1280-4a4e4103-3fc6-4ed2-a11e-8ae6a657df33.jpg" alt=""/>
+                  <img src="https://thebmuffin.files.wordpress.com/2016/03/dolores-ombrage.jpg" alt=""/>
+                </Galleries3d>
+
               </>
 
             }

@@ -8,7 +8,7 @@ const Content = ({content,largeContent=null,colors}) => {
         {largeContent}
         <div className="container-fluid m-0  pb-5" style= {colors} >
             <div className="container p-1">
-            {content }
+            {content}
             </div>
             
         </div>
