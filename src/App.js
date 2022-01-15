@@ -11,7 +11,7 @@ function App() {
   [
     {
       id:1,
-        title : "Gryffondor",
+        title : "Gryffondorus",
         images : "/images/blasons/gryff.jpg",
         alt  : "gryffondor blason",
         describe : "Gryffondor a été fondée par Godric Gryffondor. Ses couleurs sont le rouge et l'or et son emblème est le lion. Elle valorise le courage, la hardiesse, la force, la bravoure et la détermination. ",
